@@ -24,15 +24,5 @@ class DynamodbTest extends TestCase
     public function getDynamoDb()
     {
         return $this->app->make('app.aws.dynamodb');        
-    }
-    
-    public function testCreateTable()
-    {
-        
-        $dynamo = $this->getDynamoDb()->newConnection();
-        
-        dd($dynamo->listTables());
-    }
-    
-    
+    }   
 }

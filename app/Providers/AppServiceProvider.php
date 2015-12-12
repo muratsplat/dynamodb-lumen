@@ -16,8 +16,7 @@ class AppServiceProvider extends ServiceProvider
         public function register()
         {                     
             $this->regDynamoDb();           
-        }
-        
+        }        
         
         /**
          * Register Dynamo Db service
@@ -49,8 +48,7 @@ class AppServiceProvider extends ServiceProvider
                 getenv('AWS_ENDPOINT'),
                 (bool) getenv('AWS_CREDENTIAL'),
             ];
-        }
-        
+        }        
         
         /**
          * Create sdk object to use Asw web services
@@ -70,7 +68,13 @@ class AppServiceProvider extends ServiceProvider
                 'endpoint'      => $endpoint,            
             ];
             
-            $params['credentials'] = ! $credential ? $credentials : $credential;
+            $fakeCredentials    = [
+                
+                'key'       => 'not-a-real-key',
+                'secret'    => 'not-a-real-secret',
+            ];
+            
+            $params['credentials'] = ! $credential ? $credentials : $fakeCredentials;
                 
             return new Sdk($params);            
         }    
