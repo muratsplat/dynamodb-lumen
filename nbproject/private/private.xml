@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/mo/works/projects/dynamodb-test/app/Http/Controllers/Dynamodb.php</file>
+            <file>file:/home/mo/works/projects/dynamodb-test/tests/ExampleTest.php</file>
+            <file>file:/home/mo/works/projects/dynamodb-test/app/Services/Dynamodb.php</file>
+            <file>file:/home/mo/works/projects/dynamodb-test/tests/TestCase.php</file>
+            <file>file:/home/mo/works/projects/dynamodb-test/app/Http/Controllers/Controller.php</file>
+            <file>file:/home/mo/works/projects/dynamodb-test/tests/App/Services/DynamodbTest.php</file>
+        </group>
     </open-files>
 </project-private>
